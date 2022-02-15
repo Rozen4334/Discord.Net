@@ -13,6 +13,9 @@ namespace Discord.Interactions
     /// </summary>
     public class SlashCommandInfo : CommandInfo<SlashCommandParameterInfo>, IApplicationCommandInfo
     {
+        /// <inheritdoc/>
+        public override CommandTargetType CommandTargetType => CommandTargetType.SlashCommand;
+
         /// <summary>
         ///     Gets the command description that will be displayed on Discord.
         /// </summary>

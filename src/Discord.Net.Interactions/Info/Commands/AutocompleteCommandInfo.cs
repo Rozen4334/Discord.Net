@@ -12,6 +12,9 @@ namespace Discord.Interactions
     /// </summary>
     public sealed class AutocompleteCommandInfo : CommandInfo<CommandParameterInfo>
     {
+        /// <inheritdoc/>
+        public override CommandTargetType CommandTargetType => CommandTargetType.AutocompleteInteraction;
+
         /// <summary>
         ///     Gets the name of the target parameter.
         /// </summary>

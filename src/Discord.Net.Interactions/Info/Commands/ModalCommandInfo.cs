@@ -10,6 +10,9 @@ namespace Discord.Interactions
     /// </summary>
     public class ModalCommandInfo : CommandInfo<ModalCommandParameterInfo>
     {
+        /// <inheritdoc/>
+        public override CommandTargetType CommandTargetType => CommandTargetType.ModalInteraction;
+
         /// <summary>
         ///     Gets the <see cref="ModalInfo"/> class for this commands <see cref="IModal"/> parameter.
         /// </summary>

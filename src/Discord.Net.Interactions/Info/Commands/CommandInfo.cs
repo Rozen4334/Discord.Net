@@ -53,6 +53,9 @@ namespace Discord.Interactions
         public bool IsTopLevelCommand { get; }
 
         /// <inheritdoc/>
+        public abstract CommandTargetType CommandTargetType { get; }
+
+        /// <inheritdoc/>
         public RunMode RunMode { get; }
 
         /// <inheritdoc/>

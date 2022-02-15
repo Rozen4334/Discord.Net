@@ -14,6 +14,9 @@ namespace Discord.Interactions
     public class ComponentCommandInfo : CommandInfo<CommandParameterInfo>
     {
         /// <inheritdoc/>
+        public override CommandTargetType CommandTargetType => CommandTargetType.ButtonInteraction | CommandTargetType.SelectMenuInteraction;
+
+        /// <inheritdoc/>
         public override IReadOnlyCollection<CommandParameterInfo> Parameters { get; }
 
         /// <inheritdoc/>

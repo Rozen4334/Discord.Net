@@ -8,6 +8,9 @@ namespace Discord.Interactions
     /// </summary>
     public class UserCommandInfo : ContextCommandInfo
     {
+        /// <inheritdoc/>
+        public override CommandTargetType CommandTargetType => CommandTargetType.UserCommand;
+
         internal UserCommandInfo(Builders.ContextCommandBuilder builder, ModuleInfo module, InteractionService commandService)
             : base(builder, module, commandService) { }
 
